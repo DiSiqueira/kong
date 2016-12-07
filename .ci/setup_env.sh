@@ -60,7 +60,8 @@ if [ ! "$(ls -A $OPENRESTY_INSTALL)" ]; then
       --with-pcre-jit \
       --with-http_ssl_module \
       --with-http_realip_module \
-      --with-http_stub_status_module
+      --with-http_stub_status_module \
+      --without-luajit-lua52
     make
     make install
   popd
